@@ -8,6 +8,9 @@ public class App {
                 System.out.println("Odd number: " + i);
             }
         }
+        System.out.println("Enter a number: ");
+        int n = in.nextInt();
+        System.out.println("You entered: " + n);
         System.out.println("Enter a value: ");
         int k = in.nextInt();
         System.out.println("You entered the value: " + k);
