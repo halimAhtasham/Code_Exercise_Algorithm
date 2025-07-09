@@ -12,8 +12,6 @@ public class App {
         int n = in.nextInt();
         System.out.println("You entered: " + n);
         System.out.println("Enter a value: ");
-        int k = in.nextInt();
-        System.out.println("You entered the value: " + k);
         in.close();
     }
 }
