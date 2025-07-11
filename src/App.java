@@ -10,6 +10,13 @@ public class App {
         }
         System.out.println("Enter a number: ");
         int n = in.nextInt();
+        if (n < 0) {
+            System.out.println("Negative number entered.");
+        } else if (n == 0) {
+            System.out.println("Zero entered.");
+        } else {
+            System.out.println("Positive number entered.");
+        }
         System.out.println("You entered: " + n);
         System.out.println("Enter a value: ");
         System.out.println("Enter a string");
