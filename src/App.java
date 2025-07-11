@@ -12,8 +12,6 @@ public class App {
         int n = in.nextInt();
         if (n < 0) {
             System.out.println("Negative number entered.");
-        } else if (n == 0) {
-            System.out.println("Zero entered.");
         }
         else if (n % 2 == 0) {
             System.out.println("Even number entered.");
