@@ -14,8 +14,12 @@ public class App {
             System.out.println("Negative number entered.");
         } else if (n == 0) {
             System.out.println("Zero entered.");
-        } else {
-            System.out.println("Positive number entered.");
+        }
+        else if (n % 2 == 0) {
+            System.out.println("Even number entered.");
+        }
+        else {
+            System.out.println("Odd number entered.");
         }
         System.out.println("You entered: " + n);
         System.out.println("Enter a value: ");
