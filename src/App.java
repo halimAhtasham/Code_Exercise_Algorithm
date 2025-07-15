@@ -8,7 +8,6 @@ public class App {
                 System.out.println("Odd number: " + i);
             }
         }
-        System.out.println("Enter a value: ");
         System.out.println("Enter a string");
         in.nextLine(); // Consume the newline character left by nextInt
         String s = "";
