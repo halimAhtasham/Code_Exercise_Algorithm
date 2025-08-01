@@ -12,7 +12,6 @@ public class CombinationMemoization {
         if(n < 0 || r < 0 || n < r) return 0; // If n or r is negative, combination is not defined
         // Base case: if r is 0 or n equals r, return 1
         if(r == 0 || r == n) return 1;
-        // Recursive case: calculate combination using memoization
         // Check memoization table for previously computed values
         int t1 = (memo[n -1][r - 1] != -1) ? memo[n-1][r-1] : com(n-1, r-1);
         int t2 = (memo[n-1][r] != -1) ? memo[n-1][r] : com(n-1,r);
