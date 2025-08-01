@@ -12,7 +12,6 @@ public class FactorialRecursion {
     }
     private static long factorial(int n) {
         counter++;
-        // TODO Auto-generated method stub
         if (n <= 1) return 1l;
         long result = factorial(n - 1);
         return n * result;
