@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 public class Fibonacci {
+    public static int counter = 0;
 
     public static int fibonacci(int n){
+        counter++;
         if(n <= 0) return 0;
         if(n == 1) return 1;
         int t = fibonacci(n - 1) + fibonacci(n - 2);
@@ -17,6 +19,7 @@ public class Fibonacci {
             int k = fibonacci(i);
             System.out.print(k+ " ");
         }
+        System.out.println("\nTotal recursive calls: " + counter);
         in.close();
     }
 }
