@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class FibonacciMemoization {
     public static int[] fibo;
     public static int counter = 0;
-
     public static int fibo(int n){
         counter++;
         if(fibo[n] != -1) return fibo[n]; // Check if the value is already computed
