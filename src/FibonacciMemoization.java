@@ -20,13 +20,15 @@ public class FibonacciMemoization {
         int n = in.nextInt();
         fibo = new int[n + 1];
         Arrays.fill(fibo, -1);
-        for (int i = 0; i <= n; i++) {
-            fibo(i);
-        }
-        for (int result : fibo) {
-            System.out.print(result + " ");
-        }
-        System.out.println("\nTotal recursive calls: " + counter);
+        // for (int i = 0; i <= n; i++) {
+        //     fibo(i);
+        // }
+        // for (int result : fibo) {
+        //     System.out.print(result + " ");
+        // }
+        int result = fibo(n);
+        System.out.println(result);
+        System.out.println("Total recursive calls: " + counter);
         in.close();
     }
 }

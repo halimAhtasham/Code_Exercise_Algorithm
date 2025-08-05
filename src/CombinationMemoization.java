@@ -6,15 +6,26 @@ public class CombinationMemoization {
     public static int counter = 0;
 
     public static int com(int n , int r){
+        /*
         counter++;
-        // Check if the value is already computed
         if(memo[n][r] != -1) return memo[n][r];
-        if(n < 0 || r < 0 || n < r) return 0; // If n or r is negative, combination is not defined
-        // Base case: if r is 0 or n equals r, return 1
+        if(n < 0 || r < 0 || n < r) return 0;
         if(r == 0 || r == n) return 1;
-        // Check memoization table for previously computed values
         int t1 = (memo[n -1][r - 1] != -1) ? memo[n-1][r-1] : com(n-1, r-1);
         int t2 = (memo[n-1][r] != -1) ? memo[n-1][r] : com(n-1,r);
+        memo[n][r] = t1 + t2;
+        return memo[n][r];
+        */
+
+         /*
+         */
+        counter++;
+        if(memo[n][r] != -1) return memo[n][r];
+        if(n < 0 || r < 0 || n < r) return memo[n][r]= 0;
+        if(r == 0 || r == n) return memo[n][r] = 1;
+
+        int t1 = (memo[n-1][r-1] != -1)? memo[n-1][r-1] : com(n-1, r-1);
+        int t2 = (memo[n-1][r]!= -1)? memo[n-1][r]: com(n-1,r);
         memo[n][r] = t1 + t2;
         return memo[n][r];
     }
