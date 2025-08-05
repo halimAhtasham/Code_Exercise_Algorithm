@@ -7,6 +7,7 @@ public class CombinationMemoization {
 
     public static int com(int n , int r){
         /*
+        // We can just return the value
         counter++;
         if(memo[n][r] != -1) return memo[n][r];
         if(n < 0 || r < 0 || n < r) return 0;
@@ -17,13 +18,11 @@ public class CombinationMemoization {
         return memo[n][r];
         */
 
-         /*
-         */
+        // We can store the value in arr
         counter++;
         if(memo[n][r] != -1) return memo[n][r];
         if(n < 0 || r < 0 || n < r) return memo[n][r]= 0;
         if(r == 0 || r == n) return memo[n][r] = 1;
-
         int t1 = (memo[n-1][r-1] != -1)? memo[n-1][r-1] : com(n-1, r-1);
         int t2 = (memo[n-1][r]!= -1)? memo[n-1][r]: com(n-1,r);
         memo[n][r] = t1 + t2;
