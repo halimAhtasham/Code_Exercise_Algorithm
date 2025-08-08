@@ -28,8 +28,7 @@ class LCS{
                 }
             }
         }
-        lcsLength = l[m][n];
-        return lcsLength;
+        return lcsLength = l[m][n];
     } // Function to calculate the length
 
     void PrintLcsString(){
