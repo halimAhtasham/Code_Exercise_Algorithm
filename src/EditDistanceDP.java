@@ -22,6 +22,7 @@ class LevenshteinDistanceDP {
             dp[0][j] = j;
         }
 
+        // Fill the dp array
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (S.charAt(i - 1) == D.charAt(j - 1))
