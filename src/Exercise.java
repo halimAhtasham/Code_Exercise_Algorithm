@@ -5,7 +5,6 @@ public class Exercise {
 
     public static int counter = 0;
     public static int[][] ncr;
-    
 
     public static int nCr(int n, int r){
         counter++;
