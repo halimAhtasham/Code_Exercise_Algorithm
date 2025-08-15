@@ -40,7 +40,6 @@ public class Exercise {
         for (int i = 0; i <= n; i++) {
             Arrays.fill(ncr[i], -1);
         }
-
         int result = nCr(n, r);
         System.out.println("Combination: " + result + "\nTotal recursive calls: " + counter);
 
