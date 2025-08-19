@@ -17,6 +17,7 @@ public class Exercise {
         return ncr[n][r];
     }
 
+
     //fibonacci method
     // public static int[] fibArray;
     // public static int fibo(int n){
