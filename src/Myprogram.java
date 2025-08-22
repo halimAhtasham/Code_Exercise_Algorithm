@@ -1,6 +1,5 @@
 import java.util.*;
 
-//////////////////////////////
 class Nqueen {
 
     int n;
@@ -108,8 +107,6 @@ class Nqueen {
     } // end of startsolve method
 
 }// end of Nqeen class
-
-////////////////////////////////////
 
 public class Myprogram {
     public static void main(String[] args) {
