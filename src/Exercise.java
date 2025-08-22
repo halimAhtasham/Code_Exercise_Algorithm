@@ -41,7 +41,6 @@ public class Exercise {
         }
         int result = nCr(n, r);
         System.out.println("Combination: " + result + "\nTotal recursive calls: " + counter);
-
         // Fibonacci calculation
         // fibArray = new int[n+1];
         // Arrays.fill(fibArray, -1);
