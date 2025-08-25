@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise {
-
     public static int counter = 0;
     public static int[][] ncr;
 
