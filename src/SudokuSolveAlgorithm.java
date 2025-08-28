@@ -120,7 +120,6 @@ class Sudoku {
 
 } // end of Sudoku class
 
-///////////////////////////////
 public class SudokuSolveAlgorithm {
 
     public static void main(String[] args) {
