@@ -22,13 +22,11 @@ class Sudoku {
                 { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
                 { 0, 0, 5, 2, 0, 6, 3, 0, 0 }
         };
-
     }
 
     void printboard() {
         int i, j;
         for (i = 0; i < n; i++) {
-
             if (i > 0 && i % 3 == 0) {
                 System.out.println();
                 System.out.print("---------------------"); // 22 symbols
@@ -38,14 +36,11 @@ class Sudoku {
             for (j = 0; j < n; j++) {
                 if (j > 0 && j % 3 == 0)
                     System.out.print(" |");
-
                 if (board[i][j] <= 0)
                     System.out.print(". ");
                 else
                     System.out.print(board[i][j] + " ");
-
             } // inner loop
-
         } // outer loop
         System.out.println();
     }
@@ -70,7 +65,6 @@ class Sudoku {
             for (j = boxStartCol; j < boxStartCol + 3; j++)
                 if (board[i][j] == num)
                     return false; // box contains same number
-
         return true;
     }
 
