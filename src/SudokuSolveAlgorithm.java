@@ -47,7 +47,6 @@ class Sudoku {
 
     boolean checkSafe(int row, int col, int num) {
         int i, j;
-
         // check rowwise
         for (j = 0; j < n; j++)
             if (board[row][j] == num)
