@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Exercise {
 
     // Factorial Recursive method
-    // public static int factorial(int n){
-    //     if(n == 0) return 1;
-    //     return n * factorial(n-1);
-    // }
+    public static int factorial(int n){
+        if(n == 0) return 1;
+        return n * factorial(n-1);
+    }
 
 
     // Recursive power method
@@ -78,6 +78,7 @@ public class Exercise {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
+        System.out.println(factorial(n));
         System.out.println("\n"+counter);
         // long base = in.nextInt();   // Recursive power method
         // long power = in.nextInt();
