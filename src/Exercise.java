@@ -85,7 +85,6 @@ public class Exercise {
         // long result = power(base, power);
         // System.out.println("Power :" + result);
 
-
         // int result = factorial(n); // Factorial
         // System.out.println("Factorial: "+ result);
         in.close();
