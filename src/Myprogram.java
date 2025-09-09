@@ -37,14 +37,12 @@ class Nqueen {
             if (board[i][j] == 1)
                 return false;
         }
-
         // left, same row
         i = row; // same row, no change of i
         for (j = col; j >= 0; j--) {
             if (board[i][j] == 1)
                 return false;
         }
-
         // lower left diagonal
         for (i = row, j = col; i < n && j >= 0; i++, j--) {
             if (board[i][j] == 1)
